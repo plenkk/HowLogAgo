@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meraki Time</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="test/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    min-height: 50px;
+    padding: 0;
+    width: 450px;
+}
+h1 {
+    font-family: 'Menlo', monospace;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    color:green;
+}
+a:link, a:visited {
+    color:black
+}
+
+img {
+    width: 30px;
+}
+
+.modal-header {
+    align-items: center;
+    border-bottom: 0.5px solid #dadada;
+}
+
+.modal-content {
+    padding: 0 22px;
+}
+
+.modal-boxes {
+    border-top: 0.5px solid #dadada;
+    height: 50px;
+    width: 100%;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.logo {
+    padding: 16px;
+}
+
+.logo-icon {
+    vertical-align: text-bottom;
+    margin-right: 12px;
+}
+
+.version {
+    color: #444444;
+    font-size: 18px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    position: relative;
+    
+}
+
+.flex {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    width: auto;
+
+}
+
+.flex:hover {
+    opacity: 0.4;
+}
+
+.flex .fa {
+    font-size: 40px;
+    color: #2f5876
+}
+
+    </style>
+   
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src="/Log_ago clock.png" alt="How Log Ago?" class=logo-icon:> How Log Ago?
+            <span class="version"> (1.1.5)</span>
+        </h1>
+    </div>
+
+    <div class="modal-content">
+        <p> <i>Displays the current local network time and how long ago an event occured.</i></p>
+    </div>
+
+    <div class="modal-boxes">
+        <div class="flex-container">
+            <div class="flex" >
+                <button type="button" id="auto_write"> Refresh </button>
+            </div>
+            <div class="flex" >
+                <a href='https://forms.gle/pHvRiV7UZnHfTxgo6' target="_blank">
+                 <button type="button" id="feedback" > Submit Feedback </button></a>
+            </div>
+          <!---- <div class="flex" >
+                <button type="button" id="network_time"> Show/Hide Network Time </button>
+            </div>
+            <div class="flex" >
+                <button type="button" id="hours_ago"> Show/Hide Event Time</button>
+            </div>
+        </div>
+    </div> This will be for buttons later--> 
+    <script src="popup.js" type='text/javascript'> </script>
+</body>
+
+</html>
